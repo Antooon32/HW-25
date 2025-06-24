@@ -1,0 +1,28 @@
+.list {
+    position: relative;
+    width: 700px;
+    height: 700px;
+}
+
+.item {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+}
+
+.item:nth-child(1) {
+    background-color: red;
+}
+
+.item:nth-child(2) {
+    left: calc(50% - 150px);
+    top: calc(50% - 150px);
+    z-index: 2;
+    background-color: blue;
+}
+
+.item:nth-child(3) {
+    left: calc(100% - 300px);
+    top: calc(100% - 300px);
+    background-color: green;
+}
